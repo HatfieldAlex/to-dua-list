@@ -1,0 +1,143 @@
+header {
+    text-align: center;
+    color: black
+}
+
+body {
+    background-color: #f0f4f8;
+  }
+  
+
+a {
+    display: block;
+    margin-bottom: 10px; /* Optional: adds space between the buttons */
+    text-align: center;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black
+   }
+
+.button-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+button {
+    background-color: rgb(207, 52, 221);
+    border-radius: 50px;
+    font-size: 20pt;
+    color: black;
+    font-family: 'Borel', cursive;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+  }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+h1 {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 34pt
+   }
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add-task {
+    background-color: white;
+    border-radius: 0px;
+    font-size: 10pt;
+    color: black;
+    font-family: 'Borel', cursive;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+
+.list-container {
+    font-family: 'Borel', cursive;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /*min-height: 100vh; /* takes full viewport height */
+    flex-direction: column
+}
+
+ul {
+    text-align: left;
+    list-style-position: inside;
+    }
+
+
+.to-do-app {
+    display: flex;
+    flex-direction: column;
+    width: 300px;       
+    height: 400px;       
+    border: 2px solid #000; 
+    padding: 15px;      
+    overflow: auto;    
+    margin: 20px auto;   
+    background-color: white
+}
+
+.to-do-app h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-app ul {
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+}
+
+li {
+    position: relative;
+    padding-left: 1.5em; /* Adjust this value to position your content to the right of the bullet point */
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;  /* Distributes items evenly: items are positioned with space between the lines */
+    align-items: center;             /* Center-align vertically */
+}
+
+.task-button {
+    /* Style your button as needed here */
+    margin-left: 30px;  /* Adds a bit of spacing between the text and the button */
+}
+
+li {
+    position: relative;
+    padding-left: 1.5em; /* Adjust this value to position your content to the right of the bullet point */
+}
+
+li::before {
+    content: "\2022"; /* Unicode bullet point character */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em; /* You can adjust this to make the bullet bigger or smaller */
+}

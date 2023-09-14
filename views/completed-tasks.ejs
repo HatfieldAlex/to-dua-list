@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--fonts from Google-->
+    <!--font for header-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <!--font for buttons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Dua List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script.js" defer></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+</head>
+<body>
+    <header>
+        <section id="title">
+            <h1><a href="index.html" style="text-decoration:none">To Dua List</a></h1>
+        </section>
+    </header>
+
+    <main>
+        <div class="to-do-app">
+            <h2>Completed Tasks</h2>
+            
+
+  
+
+            <ul>
+                <% items.forEach(item => { %>
+                    <li>
+                        <%= item.tasks %>
+
+                    </li>
+                <% }); %>
+            </ul>
+
+            <button id="clearCompleted" style="font-family: 'Roboto', sans-serif; background-color: #f1f1f1; border: none; padding: 10px; margin-top: 20px; cursor: pointer;">
+                Clear
+            </button>
+    
+            </div>
+
+
+        <ul class="list-container" id="list-container">
+
+        </ul>
+
+    <form action="http://localhost:4000/add-input" method="post">
+
+
+
+    </form>
+    
+
+
+
+
+
+
+
+
+        </div>
+    <br>
+    <br>
+    <div class="button-container">
+            
+            <a href="/incomplete-tasks">
+                <button>TO-DO LIST</button>
+            </a>
+    </div>
+
+    
+
+        
+    </main>
+</body>
+</html>
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+
